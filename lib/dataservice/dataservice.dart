@@ -5,7 +5,7 @@ import 'package:laptopapi/classdata/classdata.dart';
 
 Future<Cdata> getAllData() async {
   final response =
-      await http.get(Uri.parse('https://damarlangit.co.id/db.php/2'));
+      await http.get(Uri.parse('https://dummyjson.com/users/2'));
 
   return Cdata.fromJson(jsonDecode(response.body));
 }
